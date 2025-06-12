@@ -10,4 +10,4 @@
 
 ## Solution
 
-![Solution to Exercise 1.15](https://raw.githubusercontent.com/VikSil/DevOps_with_Docker/refs/heads/trunk/Part1/Exercise_1.15/Exercise_1.15.png)
+![Solution to Exercise 1.15](https://raw.githubusercontent.com/)
