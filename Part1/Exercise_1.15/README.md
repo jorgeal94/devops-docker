@@ -10,4 +10,4 @@
 
 ## Solution
 
-![Solution to Exercise 1.15](https://raw.githubusercontent.com/jorgeal94/devops-docker/blob/main/Part1/Exercise_1.15/Exercise1.15.png)
+![Solution to Exercise 1.15](https://github.com/jorgeal94/devops-docker/blob/main/Part1/Exercise_1.15/Exercise1.15.png?raw=true)
