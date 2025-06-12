@@ -52,4 +52,4 @@
 
 ## Solution
 
-https://github.com/VikSil/HU-Docker-course-part3-node-repo
+[https://github.com/Jorgeal94/](https://github.com/jorgeal94/docker-part3-node)
