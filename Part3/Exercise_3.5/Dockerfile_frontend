@@ -1,0 +1,17 @@
+FROM node:16
+
+WORKDIR /usr/src/app
+
+EXPOSE 5000
+
+COPY . . 
+
+RUN npm install
+RUN npm install -g serve
+RUN npm run build
+
+RUN useradd -m frontend
+RUN chown frontend .
+USER frontend
+
+CMD ["serve", "-s", "-l", "5000", "build"]

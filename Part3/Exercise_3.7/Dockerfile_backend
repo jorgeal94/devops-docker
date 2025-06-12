@@ -1,0 +1,23 @@
+FROM golang:1.23.3-alpine3.20
+
+EXPOSE 8080
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+ENV PORT=8080
+ENV REQUEST_ORIGIN=http://localhost
+
+
+RUN go build && find . -type f ! -name 'server' -delete && \
+    apk update && apk add upx && upx --brute server && apk del -r upx && \
+    rm -rf /var/cache/apk/* && \
+    addgroup -S backend && adduser -S backend -G backend && chown -R backend:backend . && \
+    rm -rf cache -f && rm -rf common && \
+    rm -rf controller && rm -rf pgconnection && rm -rf router && \
+    rm -rf /var/lib/apt/lists/* 
+
+USER backend
+
+CMD ["./server"]
